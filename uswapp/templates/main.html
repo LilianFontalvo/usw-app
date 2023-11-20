@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"
+    />
+    <link
+      href="{{ url_for('static', filename='css/main.css') }}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.maptiler.com/maptiler-sdk-js/v1.1.1/maptiler-sdk.umd.js"></script>
+    <link
+      href="https://cdn.maptiler.com/maptiler-sdk-js/v1.1.1/maptiler-sdk.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.maptiler.com/leaflet-maptilersdk/v1.0.0/leaflet-maptilersdk.js"></script>
+    <script src="{{ url_for('static', filename='js/functions.js') }}"></script>
+  </head>
+
+  <body>
+    {% include 'map.html' %} {% include 'header.html' %}
+    <div id="reduce-button" class="reduce" onclick="reduce()">
+      <div class="arrow"></div>
+    </div>
+    <div id="sidebar" class="sidebar">
+      <div class="panel-choice">
+        <div
+          class="panel-button current"
+          id="dashboard-button"
+          onclick="toDashboard()"
+        >
+          Dashboard
+        </div>
+        <div class="panel-button disabled" id="site-button" onclick="toSite()">
+          Site
+        </div>
+      </div>
+      <div class="content">
+        {% include 'dashboard.html' %} {% include 'site.html' %}
+      </div>
+    </div>
+    {% include 'video.html' %} {% include 'favorite.html' %}
+  </body>
+</html>

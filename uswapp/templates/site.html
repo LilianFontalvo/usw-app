@@ -1,0 +1,59 @@
+<link
+  href="{{ url_for('static', filename='css/site.css') }}"
+  rel="stylesheet"
+  type="text/css"
+/>
+
+<div class="site" id="site">
+  <div class="site-banner">
+    <img
+      src="{{ url_for('static', filename='img/niagara_falls.jpg') }}"
+      alt="Niagara Falls"
+      style="object-fit: cover"
+      width="100%"
+      height="100%"
+    />
+    <table class="site-title-bg">
+      <tr>
+        <td>
+          <h2 class="site-title">Niagara Falls</h2>
+        </td>
+        <td>
+          <div class="favorite-container">
+            <img
+              id="favorite-icon-selected"
+              class="favorite-icon"
+              src="{{ url_for('static', filename='img/star_orange.svg') }}"
+              alt="Favorite"
+              onclick="Unfavorite()"
+            />
+            <img
+              id="favorite-icon-nonselected"
+              class="favorite-icon"
+              src="{{ url_for('static', filename='img/star_white.svg') }}"
+              alt="Favorite"
+              onclick="Favorite()"
+            />
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="site-content">
+    <p class="site-info">
+      Location: Niagara Falls straddles the border between the United States and
+      Canada, between New York and Ontario. Size: Horseshoe Falls is about 2,600
+      feet wide and 167 feet high, while American Falls is approximately 1,060
+      feet wide. Bridal Veil Falls is the smallest. Water Flow: On average,
+      about 85,000 cubic feet of water per second flows over the falls, sourced
+      from the Great Lakes. Conservation: Conservation efforts are in place to
+      preserve the natural beauty of Niagara Falls and its surroundings.
+    </p>
+    <div class="timelapse-container" onclick="openVideo()">
+      <img
+        class="timelapse"
+        src="{{ url_for('static', filename='video/niagara_falls.gif') }}"
+      />
+    </div>
+  </div>
+</div>

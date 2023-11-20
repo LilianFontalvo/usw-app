@@ -1,0 +1,22 @@
+<link
+  href="{{ url_for('static', filename='css/map.css') }}"
+  rel="stylesheet"
+  type="text/css"
+/>
+
+<div id="map"></div>
+<script>
+  var mapOptions = {
+    center: [33.308776067099107, -69.363841410352386],
+    zoom: 2,
+    zoomControl: false,
+  };
+  const key = "CjW2ZXoBqqra7RGYj4Er";
+  const map = L.map("map", mapOptions);
+  const mtLayer = L.maptilerLayer({
+    apiKey: key,
+    style: "52d4da03-8a2b-46a4-831d-384e2e714153",
+  }).addTo(map);
+  const marker = L.marker([43.06364626847544, -79.00006919358208]);
+  marker.addTo(map).on("click", openSite);
+</script>

@@ -1,0 +1,45 @@
+<link
+  href="{{ url_for('static', filename='css/favorite.css') }}"
+  rel="stylesheet"
+  type="text/css"
+/>
+
+<!-- <div id="favorite-popup-container" class="black-transparent-overlay-bg">
+  <div class="fav-popup">
+    <p class="fav-text">
+      Coming soon! We are working on this feature, please check back later.
+    </p>
+    <button class="fav-button cancel-button" onclick="favCancel()">
+      Cancel
+    </button>
+  </div>
+</div> -->
+
+<div id="favorite-popup-container" class="black-transparent-overlay-bg">
+  <div class="fav-popup">
+    <p class="fav-text">
+      Enter your email address to be kept informed of the alerts for the site:
+      <span class="fav-site">Niagara Falls</span>
+    </p>
+    <input
+      type="email"
+      id="email"
+      class="fav-email"
+      pattern=".+@example\.com"
+    />
+    <table class="fav-buttons-table">
+      <tr>
+        <td>
+          <button class="fav-button cancel-button" onclick="favCancel()">
+            Cancel
+          </button>
+        </td>
+        <td>
+          <button class="fav-button submit-button" onclick="favSubmit()">
+            Submit
+          </button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>

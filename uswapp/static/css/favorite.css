@@ -1,0 +1,19 @@
+.fav-popup {
+  min-width: 200px;
+  background-color: #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 50%;
+  transform: translateX(-50%);
+}
+
+.fav-site {
+  font-weight: bold;
+  color: #1869a0;
+}
+
+.fav-email {
+  font-style: italic;
+  width: 100%;
+  margin: 0.5rem 0;
+}

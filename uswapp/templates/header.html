@@ -1,0 +1,24 @@
+<link
+  href="{{ url_for('static', filename='css/header.css') }}"
+  rel="stylesheet"
+  type="text/css"
+/>
+
+<div class="header">
+  <a class="logo-unesco" href="https://en.unesco.org/" target="_blank">
+    <img
+      src="{{ url_for('static', filename='img/logo_UNESCO.png') }}"
+      alt="Logo"
+      height="100%"
+      style="object-fit: cover"
+    />
+  </a>
+  <h1 class="title">UNESCO Space Watch</h1>
+  <a class="logo-isae" href="https://isae-supaero.fr/en/" target="_blank">
+    <img
+      src="{{ url_for('static', filename='img/logo_ISAE.jpg') }}"
+      alt="Logo"
+      height="100%"
+      style="object-fit: cover; padding-right: 1rem"
+  /></a>
+</div>

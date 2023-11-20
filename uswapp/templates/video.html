@@ -1,0 +1,24 @@
+<link
+  href="{{ url_for('static', filename='css/video.css') }}"
+  rel="stylesheet"
+  type="text/css"
+/>
+
+<div id="videoplayer-container" class="black-transparent-overlay-bg">
+  <h2 class="videoplayer-title">Niagara Falls</h2>
+  <video
+    id="videoplayer"
+    class="videoplayer"
+    src="{{ url_for('static', filename='video/niagara_falls.mp4') }}"
+    controls
+  ></video>
+  <div class="close-video" onclick="closeVideo()">
+    <img
+      src="{{ url_for('static', filename='img/close.svg') }}"
+      alt="Close"
+      width="100%"
+      height="100%"
+      style="object-fit: cover"
+    />
+  </div>
+</div>

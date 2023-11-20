@@ -1,0 +1,30 @@
+<link
+  href="{{ url_for('static', filename='css/dashboard.css') }}"
+  rel="stylesheet"
+  type="text/css"
+/>
+
+<div id="dashboard" class="dashboard">
+  <table class="box-container">
+    <tr>
+      <td>
+        <div class="alert box">
+          <p class="KPI-value">0</p>
+          <p class="KPI-name">Alerts</p>
+        </div>
+      </td>
+      <td>
+        <div class="watched box">
+          <p class="KPI-value">0</p>
+          <p class="KPI-name">On watch</p>
+        </div>
+      </td>
+      <td>
+        <div class="unwatched box">
+          <p class="KPI-value">0</p>
+          <p class="KPI-name">Not watched</p>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>

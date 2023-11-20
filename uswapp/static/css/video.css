@@ -1,0 +1,29 @@
+.videoplayer-title {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  padding: 0.5rem;
+  z-index: 3;
+}
+
+.videoplayer {
+  position: relative;
+  width: 100%;
+  height: calc(100% - 4rem);
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.close-video {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  z-index: 3;
+  color: white;
+  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+}

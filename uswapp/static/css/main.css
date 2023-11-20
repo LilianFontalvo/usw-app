@@ -1,0 +1,118 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: #f0f0f0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12pt;
+  padding: 0;
+  overflow: hidden;
+}
+
+.arrow {
+  padding: 0.5rem;
+  border-left: #1869a0 solid 4px;
+  border-top: #1869a0 solid 4px;
+  border-right: none;
+  border-bottom: none;
+  border-radius: 0.4rem 0 0 0px;
+}
+
+.reduce,
+.expand {
+  position: absolute;
+  z-index: 1;
+  padding: 0.5em;
+  background-color: rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+  top: calc(45% + 50px);
+  transition: 500ms;
+  border-radius: 100px;
+}
+
+.reduce {
+  transform: rotate(-45deg);
+  left: calc(30% + 0.5em);
+}
+
+.expand {
+  transform: rotate(135deg);
+  left: 0.5em;
+}
+
+.sidebar {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.75);
+  color: #1869a0;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: 500ms;
+  overflow: hidden;
+}
+
+.panel-choice {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.panel-button {
+  padding: 0.5em;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #1869a0;
+  text-decoration: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+.panel-button.current {
+  color: white;
+  background-color: #1869a0;
+  pointer-events: none;
+}
+
+.panel-button:not(.current) {
+  color: #1869a0;
+  background-color: white;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.panel-button:not(.current):hover {
+  color: #1869a0;
+  background-color: #e8f6ff;
+  transition: 300ms;
+}
+
+.panel-button.disabled {
+  color: #999;
+  background-color: #ccc;
+  pointer-events: none;
+  border: 1px solid #ccc;
+}
+
+.content {
+  flex: 1;
+}
+
+#videoplayer-container {
+  display: none;
+}
+
+.black-transparent-overlay-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+  align-items: center;
+}

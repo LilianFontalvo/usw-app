@@ -1,0 +1,32 @@
+.header {
+  position: relative;
+  background-color: white;
+  text-align: left;
+  padding: 0.5em 1em;
+  width: 100%;
+  display: inline-flex;
+  z-index: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+  color: #1869a0;
+  font-size: 21px;
+}
+
+.title {
+  margin: 0 0 0 1em;
+  padding-top: 8px;
+}
+
+.logo-isae {
+  height: 40px;
+  margin-left: auto;
+  margin-right: 1em;
+  float: right;
+}
+
+.logo-unesco {
+  height: 40px;
+  float: right;
+}

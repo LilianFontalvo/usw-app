@@ -1,0 +1,86 @@
+.site {
+  display: none;
+}
+
+.site-banner {
+  position: relative;
+  height: 10rem;
+}
+
+.site-content {
+  flex: 1;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+h2 {
+  font-size: 18pt;
+  font-weight: bold;
+  margin: 0;
+  padding: 0 0 1rem 0;
+  color: #1869a0;
+}
+
+.site-title-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2rem;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.site-title {
+  font-size: 10pt;
+  font-weight: bold;
+  color: white;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 0.5rem;
+  padding-bottom: 0;
+  vertical-align: bottom;
+}
+
+.favorite-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: right;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.favorite-icon {
+  height: 1rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  cursor: pointer;
+}
+
+#favorite-icon-selected {
+  display: none;
+}
+
+#favorite-popup-container {
+  display: none;
+}
+
+.site-info {
+  flex: 1;
+  text-align: justify;
+  margin: 0 1rem 1rem 0;
+  padding: 0;
+}
+
+.timelapse-container {
+  cursor: pointer;
+  text-align: center;
+  height: 5rem;
+}
+
+.timelapse {
+  cursor: pointer;
+  object-fit: contain;
+  height: 100%;
+}
